@@ -44,7 +44,10 @@ export default function Home() {
           <h2 className="subhead-sm text-[#230707] font-bold w-[251px] text-center">
             Sekilas Sejarah Tentang Kami
           </h2>
-          <p className="p-lg text-[#838383] w-[738px] text-center">
+          <p
+            className="p-lg text-[#838383] w-[738px] text-center"
+            id="praktikum"
+          >
             Halo Praktikan! Selamat datang di situs web Laboratorium Sistem
             Kontrol Institut Teknologi-Perusahaan Listrik Negara (IT-PLN). Situs
             web ini didedikasikan untuk memudahkan praktikan-praktikan dalam
