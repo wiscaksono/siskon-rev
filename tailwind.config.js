@@ -9,6 +9,7 @@ module.exports = {
         sejarah: "url('/sejarah-bg.png')",
         rektor: "url('/rektor-bg.png')",
         team: "url('/team-bg.png')",
+        footer: "url('/footer-bg.png')",
       },
     },
   },
