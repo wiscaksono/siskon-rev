@@ -77,10 +77,12 @@ export default function Home() {
                   natoque penatibus et magnis dis parturient montes
                 </p>
                 <div>
-                  <div className="inline-flex py-[10px] px-[25px] rounded-[10px] bg-[#680808] gap-[10px] hover:bg-white text-white hover:text-[#F35D5E] glow-red hover:glow-white transition-colors">
-                    <button className="p-lg">Pilih Praktikum Ini</button>
-                    <img src="/icon/arrow-right.svg" alt="" />
-                  </div>
+                  <Link href="/siskon" passHref>
+                    <div className="inline-flex py-[10px] px-[25px] rounded-[10px] bg-[#680808] gap-[10px] hover:bg-white text-white hover:text-[#F35D5E] glow-red hover:glow-white transition-colors">
+                      <button className="p-lg">Pilih Praktikum Ini</button>
+                      <img src="/icon/arrow-right.svg" alt="" />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -98,10 +100,12 @@ export default function Home() {
                   natoque penatibus et magnis dis parturient montes
                 </p>
                 <div>
-                  <div className="inline-flex py-[10px] px-[25px] rounded-[10px] bg-[#680808] gap-[10px] hover:bg-white text-white hover:text-[#F35D5E] glow-red hover:glow-white transition-colors">
-                    <button className="p-lg">Pilih Praktikum Ini</button>
-                    <img src="/icon/arrow-right.svg" alt="" />
-                  </div>
+                  <Link href="/ski" passHref>
+                    <div className="inline-flex py-[10px] px-[25px] rounded-[10px] bg-[#680808] gap-[10px] hover:bg-white text-white hover:text-[#F35D5E] glow-red hover:glow-white transition-colors">
+                      <button className="p-lg">Pilih Praktikum Ini</button>
+                      <img src="/icon/arrow-right.svg" alt="" />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
