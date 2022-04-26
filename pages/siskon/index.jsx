@@ -5,11 +5,12 @@ import Link from "next/link";
 import { useState } from "react";
 
 import TugasRumah from "./tugas-rumah";
-import MateriPendukung from "./materi-pendukung";
+// import MateriPendukung from "./materi-pendukung";
 import JadwalPraktek from "./JadwalPraktek";
 import TemplateJournal from "./template-journal";
 import ModulPraktikum from "./modul-praktikum";
 import DataPengamatan from "./data-pengamatan";
+import MateriPendukung from "./materi-pendukung";
 
 export default function Home() {
   const [active, activeState] = useState("tugas rumah");

@@ -22,36 +22,6 @@ export default function MateriPendukung() {
       </div>
 
       <div>
-        <div id="root-locus">
-          <Video
-            title="Root Locus"
-            secondTitle="1. Pengenalan Root Locus"
-            link="https://www.youtube.com/embed/TjeVwk7YQ0Y"
-          />
-          <Video
-            secondTitle="2. Dasar Membuat Sketsa Root Locus"
-            link="https://www.youtube.com/embed/xPVnBF1_a5M"
-          />
-          <Video
-            secondTitle="3. Kriteria Kestabilan Dengan Routh-Hurwitz"
-            link="https://www.youtube.com/embed/Iqa4AX-zas0"
-          />
-        </div>
-        <div id="bode-plot">
-          <Video
-            title="Bode Plot"
-            secondTitle="1. Memahami Bode Plot"
-            link="https://www.youtube.com/embed/a1pVjeKBhEg"
-          />
-          <Video
-            secondTitle="2. Sketsa Bode Plot"
-            link="https://www.youtube.com/embed/wTjzSMg8SEo"
-          />
-          <Video
-            secondTitle="3. Sketsa Bode Plot"
-            link="https://www.youtube.com/embed/jUs9uacmHG0"
-          />
-        </div>
         <div id="pid-controller">
           <Video
             title="PID Controller"

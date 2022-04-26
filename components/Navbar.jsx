@@ -4,7 +4,9 @@ export default function Navbar() {
   return (
     <section className="wrapper">
       <nav className="flex items-center justify-between">
-        <img src="logo.png" alt="" />
+        <Link href="/">
+          <img src="logo.png" alt="" className="cursor-pointer" />
+        </Link>
         <div className="flex items-center gap-[32px] py-[20px]">
           <Link href="/" passHref>
             <button className="p-md text-[#230707]">Home</button>
