@@ -9,7 +9,7 @@ export default function Navbar() {
           <Link href="/" passHref>
             <button className="p-md text-[#230707]">Home</button>
           </Link>
-          <Link href="/" passHref>
+          <Link href="#praktikum" passHref>
             <button className="p-md text-[#230707]">Pilih Praktikum</button>
           </Link>
           <Link href="/" passHref>
