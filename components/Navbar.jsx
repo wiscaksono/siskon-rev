@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function Navbar() {
   return (
-    <div className="shadow-md fixed w-full h-[64px] bg-white  z-[99] top-0">
+    <div className="shadow-md fixed w-full h-[64px] bg-white  z-[51] top-0">
       <Head>
         <title>Laboratorium Sistem Kontrol</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />

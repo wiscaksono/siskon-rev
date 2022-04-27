@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Modal from "../components/Modal";
 
 export default function Home() {
   useEffect(() => {
@@ -98,9 +99,9 @@ export default function Home() {
                   Sistem Kontrol
                 </h3>
                 <p className="p-md text-white">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                  natoque penatibus et magnis dis parturient montes
+                  Sistem kendali atau sistem kontrol (Control system) adalah
+                  suatu alat (kumpulan alat) untuk mengendalikan, memerintah dan
+                  mengatur keadaan dari suatu sistem.
                 </p>
                 <div>
                   <Link href="/siskon" passHref>

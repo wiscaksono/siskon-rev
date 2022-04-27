@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Modal from "./Modal";
 
 export default function Footer() {
   return (
@@ -10,12 +11,7 @@ export default function Footer() {
             jika ada pertanyaan,masukan atau kritik silahkan beritahu kami
           </p>
         </div>
-        <Link passHref href="">
-          <div className="flex items-center justify-center py-[10px] px-[25px] rounded-[10px] border-2 border-white hover:bg-white transition-colors  text-white hover:text-[#F35D5E]">
-            <p className="p-lg font-semibold transition-colors">Klik Disini</p>
-            <img src="/icon/arrow-right.svg" alt="" className="ml-[10px]" />
-          </div>
-        </Link>
+        <Modal />
       </div>
 
       <div className="wrapper flex items-center justify-between">
