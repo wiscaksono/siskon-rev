@@ -1,7 +1,8 @@
 import Link from "next/link";
-export default function Modul() {
+
+export default function JadwalPraktek() {
   return (
-    <div className="flex flex-col-reverse lg:flex-col items-start">
+    <div className="">
       <Link
         href="https://drive.google.com/u/0/uc?id=1NFz9h6mJtvzzTAvnsQsl_Hf2ghkv5sVQ&export=download"
         passHref
@@ -13,11 +14,6 @@ export default function Modul() {
           </div>
         </button>
       </Link>
-      <iframe
-        className="w-full h-[440px] lg:h-[800px] px-[20px] lg:px-0"
-        src="https://drive.google.com/file/d/1NFz9h6mJtvzzTAvnsQsl_Hf2ghkv5sVQ/preview"
-        allow="autoplay"
-      ></iframe>
     </div>
   );
 }

@@ -1,9 +1,10 @@
 import Link from "next/link";
-export default function Modul() {
+
+export default function ModulPraktikum() {
   return (
-    <div className="flex flex-col-reverse lg:flex-col items-start">
+    <div>
       <Link
-        href="https://drive.google.com/u/0/uc?id=1NFz9h6mJtvzzTAvnsQsl_Hf2ghkv5sVQ&export=download"
+        href="https://drive.google.com/u/0/uc?id=1GPz427pNl2poN3OgrELitq5HxR-NetwC&export=download"
         passHref
       >
         <button className="mb-[40px]">
@@ -13,9 +14,10 @@ export default function Modul() {
           </div>
         </button>
       </Link>
+
       <iframe
-        className="w-full h-[440px] lg:h-[800px] px-[20px] lg:px-0"
-        src="https://drive.google.com/file/d/1NFz9h6mJtvzzTAvnsQsl_Hf2ghkv5sVQ/preview"
+        className="w-full h-[800px]"
+        src="https://drive.google.com/file/d/1llxllHQaW_fmzP7ePgxTKZ16QlCmXJzW/preview"
         allow="autoplay"
       ></iframe>
     </div>

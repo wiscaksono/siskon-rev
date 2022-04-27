@@ -1,9 +1,15 @@
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
 export default function Home() {
   return (
-    <div>
+    <div className="relative scrollbar-hide">
+      <Link href="#" passHref>
+        <div className="w-[60px] h-[60px] rounded-full bg-[#F35D5E] flex items-center justify-center fixed bottom-[50px] right-[50px]  cursor-pointer -rotate-90 z-50 shadow-xl">
+          <img src="/icon/arrow-right.svg" alt="" />
+        </div>
+      </Link>
       <Navbar />
       <section className="bg-[#230707] relative py-[150px]">
         <div className="wrapper flex items-center mx-auto justify-between">
@@ -30,7 +36,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="absolute right-0 bottom-0">
+          <div className="absolute right-0 -bottom-[1px]">
             <img src="hero.svg" alt="" />
           </div>
         </div>
@@ -66,7 +72,7 @@ export default function Home() {
             <div className="py-[50px] px-[60px] bg-[#F35D5E] glow-red rounded-[20px]">
               <div className="flex flex-col gap-[20px]">
                 <div className="w-[70px] h-[70px] rounded-full bg-[#680808] flex items-center justify-center ">
-                  <img src="/icon/matlab.svg" alt="" />
+                  <img src="/icon/matlab.svg" alt="" className="animate-spin" />
                 </div>
                 <h3 className="subhead-vsm font-bold text-white">
                   Sistem Kontrol
@@ -79,7 +85,9 @@ export default function Home() {
                 <div>
                   <Link href="/siskon" passHref>
                     <div className="inline-flex py-[10px] px-[25px] rounded-[10px] bg-[#680808] gap-[10px] hover:bg-white text-white hover:text-[#F35D5E] glow-red hover:glow-white transition-colors">
-                      <button className="p-lg">Pilih Praktikum Ini</button>
+                      <button className="p-lg font-semibold">
+                        Pilih Praktikum Ini
+                      </button>
                       <img src="/icon/arrow-right.svg" alt="" />
                     </div>
                   </Link>
@@ -89,7 +97,7 @@ export default function Home() {
             <div className="py-[50px] px-[60px] bg-[#F35D5E] glow-red rounded-[20px]">
               <div className="flex flex-col gap-[20px]">
                 <div className="w-[70px] h-[70px] rounded-full bg-[#680808] flex items-center justify-center ">
-                  <img src="/icon/gear.svg" alt="" />
+                  <img src="/icon/gear.svg" alt="" className="animate-spin" />
                 </div>
                 <h3 className="subhead-vsm font-bold text-white">
                   Sistem Kontrol Industri
@@ -102,7 +110,9 @@ export default function Home() {
                 <div>
                   <Link href="/ski" passHref>
                     <div className="inline-flex py-[10px] px-[25px] rounded-[10px] bg-[#680808] gap-[10px] hover:bg-white text-white hover:text-[#F35D5E] glow-red hover:glow-white transition-colors">
-                      <button className="p-lg">Pilih Praktikum Ini</button>
+                      <button className="p-lg font-semibold">
+                        Pilih Praktikum Ini
+                      </button>
                       <img src="/icon/arrow-right.svg" alt="" />
                     </div>
                   </Link>
@@ -247,22 +257,38 @@ const Team = ({ photo, namaNim, email, instagram, line, whatsapp }) => {
       <div className="flex items-center gap-[15px]">
         <Link href={`mailto:${email}`} passHref>
           <a target="_blank">
-            <img src="/icon/email.svg" alt="" />
+            <img
+              src="/icon/email.svg"
+              alt=""
+              className="hover:scale-110 transition-transform"
+            />
           </a>
         </Link>
         <Link href={`https://www.instagram.com/${instagram}/`} passHref>
           <a target="_blank">
-            <img src="/icon/instagram.svg" alt="" />
+            <img
+              src="/icon/instagram.svg"
+              alt=""
+              className="hover:scale-110 transition-transform"
+            />
           </a>
         </Link>
         <Link href={`http://line.me/ti/p/~${line}`} passHref>
           <a target="_blank">
-            <img src="/icon/line.svg" alt="" />
+            <img
+              src="/icon/line.svg"
+              alt=""
+              className="hover:scale-110 transition-transform"
+            />
           </a>
         </Link>
         <Link href={`http://wa.me/${whatsapp}`} passHref>
           <a target="_blank">
-            <img src="/icon/whatsapp.svg" alt="" />
+            <img
+              src="/icon/whatsapp.svg"
+              alt=""
+              className="hover:scale-110 transition-transform"
+            />
           </a>
         </Link>
       </div>

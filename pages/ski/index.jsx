@@ -50,7 +50,7 @@ export default function Home() {
       <div className="bg-sejarah bg-bottom bg-no-repeat pb-[100px]">
         <div className="wrapper mt-[50px] mb-[100px]">
           <h1 className="header-sm font-bold text-[#230707] mb-[24px]">
-            Sistem Kontrol
+            Sistem Kontrol Industri
           </h1>
           <div className="grid grid-cols-12 ">
             <div className="col-span-2">
