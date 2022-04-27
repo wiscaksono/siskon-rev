@@ -1,46 +1,46 @@
 import { useState } from "react";
-import rootLocus from "./root-locus";
+import RootLocus from "./root-locus";
+import BodePlot from "./bode-plot";
+import PidController from "./pidController";
 
 export default function MateriPendukung() {
-  const [active, activeState] = useState("root locus");
+  const [active, activeState] = useState("Root Locus");
 
   function render(value) {
     switch (value) {
       case "Root Locus":
-        return <rootLocus />;
+        return <RootLocus />;
       case "Bode Plot":
-        return <bodePlot />;
+        return <BodePlot />;
       case "PID Controller":
-        return <pidController />;
+        return <PidController />;
       default:
         return "Halaman Tidak Ditemukan";
     }
   }
 
-  const topButton = ({ name }) => {
+  const SideBtn = ({ name }) => (
     <button
       className={
         name === active
-          ? "h-[28px] p-md text-[#CA3B3C] font-semibold border-2 border-[#FFBCBD] rounded-[5px] capitalize w-full hover:bg-[#CA3B3C] hover:text-white"
-          : "h-[28px] p-md text-[#CA3B3C] font-semibold border-2 border-[#FFBCBD] rounded-[5px] capitalize w-full"
+          ? "h-[28px] p-md text-white font-semibold border-2 border-[#CA3B3C] rounded-[5px] capitalize w-full bg-[#CA3B3C] hover:text-white glow-red transition-colors hover:glow-white"
+          : "h-[28px] p-md text-[#CA3B3C] font-semibold border-2 border-[#FFBCBD] hover:border-[#CA3B3C] rounded-[5px] capitalize w-full hover:bg-[#CA3B3C] hover:text-white  transition-colors"
       }
+      onClick={() => activeState(name)}
     >
       {name}
-    </button>;
-  };
+    </button>
+  );
 
   return (
     <div>
       <div className="flex gap-[15px] mb-[30px]">
-        <topButton name="Root Locus" />
-        <topButton name="Bode Plot" />
-        <topButton name="PID Controller" />
+        <SideBtn name="Root Locus" />
+        <SideBtn name="Bode Plot" />
+        <SideBtn name="PID Controller" />
       </div>
-      <div>
-        <rootLocus />
-      </div>
-
-      {/* <div>{render(value)}</div> */}
+      <div></div>
+      <div>{render(active)}</div>
     </div>
   );
 }

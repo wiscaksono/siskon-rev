@@ -1,5 +1,5 @@
 import Video from "../../../components/Video";
-export default function pidController() {
+export default function PidController() {
   return (
     <div id="pid-controller">
       <Video

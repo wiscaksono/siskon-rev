@@ -1,5 +1,5 @@
 import Video from "../../../components/Video";
-export default function bodePlot() {
+export default function BodePlot() {
   return (
     <div id="bode-plot">
       <Video

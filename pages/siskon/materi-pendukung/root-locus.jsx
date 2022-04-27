@@ -1,5 +1,5 @@
 import Video from "../../../components/Video";
-export default function rootLocus() {
+export default function RootLocus() {
   return (
     <div id="root-locus">
       <Video

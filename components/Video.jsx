@@ -1,4 +1,4 @@
-export default function Video() {
+export default function Video({ title, secondTitle, link }) {
   return (
     <div className="mb-[30px]">
       <h4 className="text-center subhead-lg font-bold">{title}</h4>
