@@ -1,31 +1,19 @@
-import Footer from "../../components/Footer";
+import Footer2 from "../../components/Footer2";
 import Navbar from "../../components/Navbar";
 import { useState } from "react";
 
-import TugasRumah from "./tugas-rumah";
-import JadwalPraktek from "./JadwalPraktek";
-import TemplateJournal from "./template-journal";
-import MateriPendukung from "./materi-pendukung";
-import DataPengamatan from "./data-pengamatan";
-import ModulPraktikum from "./modul-praktikum";
+import File from "./file";
+import Software from "./software";
 
 export default function Home() {
-  const [active, activeState] = useState("tugas rumah");
+  const [active, activeState] = useState("File");
 
   function render(value) {
     switch (value) {
-      case "tugas rumah":
-        return <TugasRumah />;
-      case "materi pendukung":
-        return <MateriPendukung />;
-      case "jadwal praktikum":
-        return <JadwalPraktek />;
-      case "template journal":
-        return <TemplateJournal />;
-      case "Modul Praktikum":
-        return <ModulPraktikum />;
-      case "Data Pengamatan":
-        return <DataPengamatan />;
+      case "File":
+        return <File />;
+      case "Software":
+        return <Software />;
       default:
         return "Halaman Tidak Ditemukan";
     }
@@ -48,21 +36,15 @@ export default function Home() {
     <section className="relative">
       <Navbar />
       <div className="bg-sejarah bg-bottom bg-no-repeat pb-[100px]">
-        <div className="wrapper mt-[50px] mb-[100px]">
+        <div className="wrapper mt-[100px] mb-[100px]">
           <h1 className="header-sm font-bold text-[#230707] mb-[24px]">
             Sistem Kontrol Industri
           </h1>
           <div className="grid grid-cols-12 ">
             <div className="col-span-2">
               <div className="flex items-center flex-col gap-[4px]">
-                <SideBtn name="tugas rumah" />
-                <SideBtn name="materi pendukung" />
-                <SideBtn name="jadwal praktikum" />
-                <SideBtn name="Modul Praktikum" />
-                {/* <SideBtn name="Video Materi" /> */}
-                <SideBtn name="Data Pengamatan" />
-                <SideBtn name="Source Code" />
-                <SideBtn name="template journal" />
+                <SideBtn name="File" />
+                <SideBtn name="Software" />
               </div>
             </div>
             <div />
@@ -71,7 +53,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Footer />
+      <Footer2 />
     </section>
   );
 }

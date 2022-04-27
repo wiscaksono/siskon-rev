@@ -1,20 +1,17 @@
 import { useState } from "react";
 
-import Modul4 from "./modul4";
-import Modul5 from "./modul5";
-import Modul6 from "./modul6";
+import ModulPraktikum from "./modul-praktikum";
+import TugasRumah from "./tugas-rumah";
 
-export default function DataPengamatan() {
-  const [active, activeState] = useState("Modul 4");
+export default function File() {
+  const [active, activeState] = useState("Tugas Rumah");
 
   function render(value) {
     switch (value) {
-      case "Modul 4":
-        return <Modul4 />;
-      case "Modul 5":
-        return <Modul5 />;
-      case "Modul 6":
-        return <Modul6 />;
+      case "Modul":
+        return <ModulPraktikum />;
+      case "Tugas Rumah":
+        return <TugasRumah />;
       default:
         return "Halaman Tidak Ditemukan";
     }
@@ -36,9 +33,8 @@ export default function DataPengamatan() {
   return (
     <div>
       <div className="flex gap-[15px] mb-[30px]">
-        <SideBtn name="Modul 4" />
-        <SideBtn name="Modul 5" />
-        <SideBtn name="Modul 6" />
+        <SideBtn name="Tugas Rumah" />
+        <SideBtn name="Modul" />
       </div>
       <div></div>
       <div>{render(active)}</div>

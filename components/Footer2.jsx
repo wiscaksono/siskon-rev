@@ -1,23 +1,8 @@
 import Link from "next/link";
 
-export default function Footer() {
+export default function Footer2() {
   return (
-    <footer className="pb-[100px] bg-footer bg-right-bottom bg-no-repeat">
-      <div className="py-[56px] rounded-[20px] bg-[#F35D5E] pl-[85px] pr-[100px] flex items-center gap-[80px] w-[788px] mx-auto glow-red mt-[50px] mb-[150px]">
-        <div>
-          <h1 className="subhead-vsm font-bold text-white">Hubungi Kami</h1>
-          <p className="p-sm text-white">
-            jika ada pertanyaan,masukan atau kritik silahkan beritahu kami
-          </p>
-        </div>
-        <Link passHref href="">
-          <div className="flex items-center justify-center py-[10px] px-[25px] rounded-[10px] border-2 border-white hover:bg-white transition-colors  text-white hover:text-[#F35D5E]">
-            <p className="p-lg font-semibold transition-colors">Klik Disini</p>
-            <img src="/icon/arrow-right.svg" alt="" className="ml-[10px]" />
-          </div>
-        </Link>
-      </div>
-
+    <footer className="py-[100px] bg-[#230707] bg-footer bg-right-bottom bg-no-repeat ">
       <div className="wrapper flex items-center justify-between">
         <div className="flex flex-col justify-between gap-[78px]">
           <div>
@@ -35,7 +20,7 @@ export default function Footer() {
               href="https://www.instagram.com/labsiskon_fket.itpln/"
               passHref
             >
-              <div className="flex items-center gap-[20px] mb-[36px]">
+              <div className="flex items-center gap-[20px] mb-[36px] cursor-pointer">
                 <div className="w-[24px] h-[24px] rounded-full bg-[#F35D5E] flex items-center justify-center">
                   <img src="/icon/instagram-footer.svg" alt="" />
                 </div>
@@ -45,13 +30,12 @@ export default function Footer() {
               </div>
             </Link>
 
-            <div className="flex items-center gap-[60px]">
+            <div className="inline-flex py-[16px] px-[40px] rounded-full items-center gap-[60px] bg-white">
               <img src="itpln-logo.png" alt="" />
               <img src="logo.png" alt="" />
             </div>
           </div>
-
-          <p className="p-sm text-[#AEAEAE]">
+          <p className="p-sm text-[#DAA2A2]">
             © 2022 Laboratorium Sistem Kontrol - Institut Teknologi PLN
           </p>
         </div>

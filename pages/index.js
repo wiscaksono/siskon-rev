@@ -1,17 +1,35 @@
 import Link from "next/link";
+import gsap from "gsap";
+import React, { useState, useEffect } from "react";
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function Home() {
+  useEffect(() => {
+    // gsap.from(".atasan", {
+    //   duration: 1,
+    //   delay: 0.5,
+    //   y: 100,
+    //   opacity: 1,
+    //   ease: "power4",
+    // });
+    // gsap.to("animated", {
+    //   duration: 2,
+    //   delay: 1.5,
+    //   text: "An electrical student who likes to code.",
+    // });
+  });
+
   return (
     <div className="relative scrollbar-hide">
       <Link href="#" passHref>
-        <div className="w-[60px] h-[60px] rounded-full bg-[#F35D5E] flex items-center justify-center fixed bottom-[50px] right-[50px]  cursor-pointer -rotate-90 z-50 shadow-xl">
+        <div className="w-[60px] h-[60px] rounded-full bg-[#F35D5E] flex items-center justify-center fixed bottom-[50px] right-[50px]  cursor-pointer -rotate-90 z-50 drop-shadow-2xl">
           <img src="/icon/arrow-right.svg" alt="" />
         </div>
       </Link>
       <Navbar />
-      <section className="bg-[#230707] relative py-[150px]">
+      <section className="bg-[#230707] relative mt-[64px] py-[150px] atasan">
         <div className="wrapper flex items-center mx-auto justify-between">
           <div className=" w-[533px] flex flex-col gap-[35px]">
             <h1 className="header-sm font-bold text-[#F35D5E]">
@@ -29,11 +47,16 @@ export default function Home() {
               mahasiswa untuk program studi Teknik Elektro (S1), dan Teknik
               Elektro (D3).
             </p>
+
             <div>
-              <div className="inline-flex py-[10px] px-[25px] rounded-[10px] bg-[#F35D5E] gap-[10px] hover:bg-white transition-colors text-white hover:text-[#F35D5E] glow-red hover:glow-white">
-                <button className="p-lg ">Pilih Praktikum</button>
-                <img src="/icon/arrow-right.svg" alt="" />
-              </div>
+              <Link href="#praktikum" passHref>
+                <div className="inline-flex py-[10px] px-[25px] rounded-[10px] bg-[#F35D5E] gap-[10px] hover:bg-white transition-colors text-white hover:text-[#F35D5E] glow-red hover:glow-white">
+                  <button className="p-lg font-semibold">
+                    Pilih Praktikum
+                  </button>
+                  <img src="/icon/arrow-right.svg" alt="" />
+                </div>
+              </Link>
             </div>
           </div>
           <div className="absolute right-0 -bottom-[1px]">
@@ -48,12 +71,9 @@ export default function Home() {
             <img src="/icon/sejarah.svg" alt="" />
           </div>
           <h2 className="subhead-sm text-[#230707] font-bold w-[251px] text-center">
-            Sekilas Sejarah Tentang Kami
+            Sekilas Sejarah <span id="praktikum"> Tentang Kami</span>
           </h2>
-          <p
-            className="p-lg text-[#838383] w-[738px] text-center"
-            id="praktikum"
-          >
+          <p className="p-lg text-[#838383] w-[738px] text-center">
             Halo Praktikan! Selamat datang di situs web Laboratorium Sistem
             Kontrol Institut Teknologi-Perusahaan Listrik Negara (IT-PLN). Situs
             web ini didedikasikan untuk memudahkan praktikan-praktikan dalam
@@ -66,7 +86,7 @@ export default function Home() {
 
         <div className="wrapper mt-[53px] ">
           <h2 className="text-center subhead-sm font-bold text-black mb-[30px]">
-            Pilih <br /> Praktikum
+            Pilih Praktikum
           </h2>
           <div className="flex items-center justify-center gap-[40px]">
             <div className="py-[50px] px-[60px] bg-[#F35D5E] glow-red rounded-[20px]">
@@ -162,56 +182,56 @@ export default function Home() {
                 whatsapp="087885002327"
               />
               <Team
-                photo="wisnu"
-                namaNim="Wisnu Wicaksono (201811184)"
+                photo="cepin"
+                namaNim="Syelvine Marsyaregina (201811188)"
                 email="wwicaksono96@gmail.com"
                 instagram="amachoker"
                 line="wiscaksono"
                 whatsapp="087885002327"
               />
               <Team
-                photo="wisnu"
-                namaNim="Wisnu Wicaksono (201811184)"
+                photo="anisa"
+                namaNim="Anisah Meiliza Harahap (201811190)"
                 email="wwicaksono96@gmail.com"
                 instagram="amachoker"
                 line="wiscaksono"
                 whatsapp="087885002327"
               />
               <Team
-                photo="wisnu"
-                namaNim="Wisnu Wicaksono (201811184)"
+                photo="rizki"
+                namaNim="Rizki Arfian Suwardi (201811123)"
                 email="wwicaksono96@gmail.com"
                 instagram="amachoker"
                 line="wiscaksono"
                 whatsapp="087885002327"
               />
               <Team
-                photo="wisnu"
-                namaNim="Wisnu Wicaksono (201811184)"
+                photo="nurul"
+                namaNim="Nurul Fadillah Putri (201911021)"
                 email="wwicaksono96@gmail.com"
                 instagram="amachoker"
                 line="wiscaksono"
                 whatsapp="087885002327"
               />
               <Team
-                photo="wisnu"
-                namaNim="Wisnu Wicaksono (201811184)"
+                photo="indah"
+                namaNim="Indah Khoirunisa (201911032)"
                 email="wwicaksono96@gmail.com"
                 instagram="amachoker"
                 line="wiscaksono"
                 whatsapp="087885002327"
               />
               <Team
-                photo="wisnu"
-                namaNim="Wisnu Wicaksono (201811184)"
+                photo="puspita"
+                namaNim="Puspita Damayanti (201911038)"
                 email="wwicaksono96@gmail.com"
                 instagram="amachoker"
                 line="wiscaksono"
                 whatsapp="087885002327"
               />
               <Team
-                photo="wisnu"
-                namaNim="Wisnu Wicaksono (201811184)"
+                photo="nanda"
+                namaNim="Inggiarta Mulya Nandany (201911158)"
                 email="wwicaksono96@gmail.com"
                 instagram="amachoker"
                 line="wiscaksono"
@@ -219,16 +239,16 @@ export default function Home() {
               />
               <div />
               <Team
-                photo="wisnu"
-                namaNim="Wisnu Wicaksono (201811184)"
+                photo="ivan"
+                namaNim="Ivan Maulana (201911151)"
                 email="wwicaksono96@gmail.com"
                 instagram="amachoker"
                 line="wiscaksono"
                 whatsapp="087885002327"
               />
               <Team
-                photo="wisnu"
-                namaNim="Wisnu Wicaksono (201811184)"
+                photo="rebeca"
+                namaNim="Rebeca Carliana (201911255)"
                 email="wwicaksono96@gmail.com"
                 instagram="amachoker"
                 line="wiscaksono"
@@ -247,7 +267,7 @@ export default function Home() {
 
 const Team = ({ photo, namaNim, email, instagram, line, whatsapp }) => {
   return (
-    <div className="py-[42px] px-[58px] bg-white rounded-[20px] flex flex-col gap-[28px] items-center justify-center">
+    <div className="py-[42px] px-[58px] bg-white rounded-[20px] flex flex-col gap-[28px] items-center justify-center hover:scale-105 transition-all duration-500">
       <div>
         <img src={`/team/${photo}.png`} alt="" />
       </div>

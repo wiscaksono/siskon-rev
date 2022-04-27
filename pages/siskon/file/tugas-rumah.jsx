@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function TugasRumah() {
   return (
-    <div className="flex flex-col-reverse lg:flex-col items-start">
+    <div className="flex flex-col-reverse lg:flex-col items-start ">
       <Link
         href="https://drive.google.com/u/0/uc?id=1NFz9h6mJtvzzTAvnsQsl_Hf2ghkv5sVQ&export=download"
         passHref
